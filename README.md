@@ -9,7 +9,7 @@ But first, let's see how code is distributed in Java world.
 
 A Java project usually consists of three parts: 
 
-* an unique name of the project
+* a unique name of the project
 * the compiled code (.class files)
 * project resources (config files, icons, static content)
 
@@ -41,8 +41,8 @@ Similarly, the jar of a database driver / web framework / email client can be do
 
 Now starts the trouble. 
 If a project contains many modules and these are all packaged manually, then someone must do the dull and error prone job of zipping everything. 
-When an useful dependency has dependencies of its own (each of which can have more dependencies) then finding all the jars becomes a pain. 
-When a jar has several versions and each version can depends on different versions of its dependencies, then matching the versions becomes a nightmare. 
+When a useful dependency has dependencies of its own (each of which can have more dependencies) then finding all the jars becomes a pain. 
+When a jar has several versions and each version can depend on different versions of its dependencies, then matching the versions becomes a nightmare. 
 All this is solved by build tools. 
 We will focus on a tool called apache maven. 
 
@@ -97,7 +97,7 @@ To add a dependency, find its coordinates in maven central and add the info to p
         <artifactId>???</artifactId>
         <version>???</version>
       </dependency>
-    <dependencies>
+    </dependencies>
 
 ## Exercise
 
