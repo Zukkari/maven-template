@@ -64,7 +64,8 @@ To get along with maven, the following requirements must be met:
 * all test resources are placed in the src/test/resources directory
 * each project will contain a pom.xml file in the project root directory
 
-To install maven, download the binary zip from https://maven.apache.org/download.cgi and follow the install instructions at https://maven.apache.org/install.html 
+To install maven, download the binary zip from https://maven.apache.org/download.cgi and follow the install instructions at https://maven.apache.org/install.html.
+Linux users: just use your package manager.
 
 When everything is set up correctly, then the following one-liners can be used on the command line (in the project root directory): 
 
@@ -72,6 +73,7 @@ When everything is set up correctly, then the following one-liners can be used o
 * mvn test (compile and run the tests)
 * mvn package (package the entire project)
 * mvn clean (delete the compiled code and packages)
+* mvn clean package (delete all, compile, run tests, package)
 
 The pom.xml contains the project name and version along with the list of dependencies the project is using. 
 All the dependencies declared in the pom.xml are automatically downloaded and become usable in the project. 
