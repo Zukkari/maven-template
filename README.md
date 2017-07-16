@@ -64,7 +64,7 @@ To get along with maven, the following requirements must be met:
 * all resources are placed in the `src/main/resources` directory
 * all test sources are placed in the `src/test/java` directory
 * all test resources are placed in the `src/test/resources` directory
-* each project will contain a pom.xml file in the project root directory
+* each project will contain a **pom.xml** file in the project root directory (more on that later)
 
 To install maven, download the binary zip from https://maven.apache.org/download.cgi and follow the install instructions at https://maven.apache.org/install.html.
 Linux users: just use your package manager.
@@ -110,10 +110,10 @@ Use https://mvnrepository.com/ or https://search.maven.org/ to search for packag
 
 A poor chap on stackoverflow is having trouble packing some files: https://stackoverflow.com/q/23265857
 
-Clone the sample project here and open it in IntelliJ.
+Clone this repository and open it in IntelliJ.
 Try to add his compression method and compile it.
 You are missing the *org.apache.commons.io.IOUtils* class (don't try to use *sun.misc.IOUtils* instead of it).
-Add the missing dependency for commons-io.
+Add the missing dependency for commons-io by changing the pom.xml.
 Package the sample project into a jar file: open the maven toolbar (double click shift, write maven).
 Find lifecycle -> package and run it.
 Open the created jar (in the target directory) and see what's inside.
