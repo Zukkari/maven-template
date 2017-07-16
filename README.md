@@ -88,8 +88,9 @@ Usually it is put together by copy-pasting stuff from stack overflow or an exist
 Each project has "maven coordinates", which is a combination of a groupId (company name, usually the reversed domain name), a artifactId (project name) and a version (-SNAPSHOT suffix is used to mark non-release versions). 
 Maven coordinates are also used to reference dependencies. 
 
-Many public packages are available from Maven Central (https://search.maven.org/). 
-To add a dependency, find its coordinates in maven central and add the info to pom.xml: 
+Many public packages are available from Maven Central.
+To add a dependency, find its coordinates in maven central and add the info to pom.xml.
+Use https://mvnrepository.com/ or https://search.maven.org/ to search for packages by name.
 
     <dependencies>
       <dependency>
