@@ -114,7 +114,7 @@ Clone this repository and open it in IntelliJ.
 Try to add his compression method and compile it.
 You are missing the *org.apache.commons.io.IOUtils* class (don't try to use *sun.misc.IOUtils* instead of it).
 Add the missing dependency for commons-io (groupId: commons-io, artifactId: commons-io) by changing the pom.xml.
-Package the sample project into a jar file: open the maven toolbar (double click shift, write maven).
+Package the sample project into a jar file: open the maven toolbar (view -> tool windows -> maven projects).
 Find lifecycle -> package and run it.
 Open the created jar (in the target directory) and see what's inside.
 
