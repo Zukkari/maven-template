@@ -110,7 +110,7 @@ Use https://mvnrepository.com/ or https://search.maven.org/ to search for packag
 
 A poor chap on stackoverflow is having trouble packing some files: https://stackoverflow.com/q/23265857
 
-Clone this repository and open it in IntelliJ.
+Clone [this repository](https://github.com/mbakhoff/maven-template) and open it in IntelliJ.
 Try to add his compression method and compile it.
 You are missing the *org.apache.commons.io.IOUtils* class (don't try to use *sun.misc.IOUtils* instead of it).
 Add the missing dependency for commons-io (groupId: commons-io, artifactId: commons-io) by changing the pom.xml.
