@@ -106,7 +106,7 @@ Use https://mvnrepository.com/ or https://search.maven.org/ to search for packag
 </dependencies>
 ```
 
-## Exercise
+## Task 1
 
 A poor chap on stackoverflow is having trouble packing some files: https://stackoverflow.com/q/23265857
 
@@ -117,3 +117,10 @@ Add the missing dependency for commons-io (groupId: commons-io, artifactId: comm
 Package the sample project into a jar file: open the maven toolbar (double click shift, write maven).
 Find lifecycle -> package and run it.
 Open the created jar (in the target directory) and see what's inside.
+
+## Task 2
+
+Add a dependency for [gson](https://github.com/google/gson).
+Create a simple class that contains some fields.
+Create some instances of this class.
+Read the [gson user guide](https://github.com/google/gson/blob/master/UserGuide.md#TOC-Object-Examples) and try to convert the objects to string and back again.
