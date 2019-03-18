@@ -89,7 +89,7 @@ Take a look at the pom.xml in this repository right now.
 Writing a pom.xml from scratch is not a job for a sane person.
 Usually it is put together by copy-pasting stuff from stack overflow or an existing project.
 
-Each project has "maven coordinates", which is a combination of a groupId (company name, usually the reversed domain name), a artifactId (project name) and a version (-SNAPSHOT suffix is used to mark non-release versions).
+Each project has "maven coordinates", which is a combination of a groupId (company name, usually the reversed domain name), an artifactId (project name) and a version (-SNAPSHOT suffix is used to mark non-release versions).
 Maven coordinates are also used to reference dependencies.
 
 Many public packages are available from Maven Central.
@@ -110,7 +110,7 @@ Use https://mvnrepository.com/ or https://search.maven.org/ to search for packag
 
 A poor chap on stackoverflow is having trouble packing some files: https://stackoverflow.com/q/23265857
 
-Clone [this repository](https://github.com/mbakhoff/maven-template) and open it in IntelliJ.
+Clone this repository and open it in IntelliJ.
 Try to add his compression method and compile it.
 You are missing the *org.apache.commons.io.IOUtils* class (don't try to use *sun.misc.IOUtils* instead of it).
 Add the missing dependency for commons-io by changing the pom.xml.
@@ -123,5 +123,12 @@ Open the created jar (in the target directory) and see what's inside.
 
 Add a dependency for [gson](https://github.com/google/gson).
 Create a simple class that contains some fields.
-Create some instances of this class.
+Create some instances of the class.
 Read the [gson user guide](https://github.com/google/gson/blob/master/UserGuide.md#TOC-Object-Examples) and try to convert the objects to string and back again.
+
+## Task 3
+
+Convert your team's project repository to use maven:
+* add the pom.xml
+* move the code from src/ to src/main/java/
+* add a line "target" to .gitignore (maven puts all compiled code into the "target" directory)
