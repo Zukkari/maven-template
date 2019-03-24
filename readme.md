@@ -132,3 +132,4 @@ Convert your team's project repository to use maven:
 * add the pom.xml
 * move the code from src/ to src/main/java/
 * add a line "target" to .gitignore (maven puts all compiled code into the "target" directory)
+* open the project in intellij, right click on the pom.xml and select "add as maven project" (only needed for projects that were imported when they were not maven projects).
