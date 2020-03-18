@@ -121,13 +121,6 @@ Open the created jar (in the target directory) and see what's inside.
 
 ## Task 2
 
-Add a dependency for [gson](https://github.com/google/gson).
-Create a simple class that contains some fields.
-Create some instances of the class.
-Read the [gson user guide](https://github.com/google/gson/blob/master/UserGuide.md#TOC-Object-Examples) and try to convert the objects to string and back again.
-
-## Task 3
-
 Convert your team's project repository to use maven:
 * add the pom.xml
 * move the code from src/ to src/main/java/
